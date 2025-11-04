@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Number Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">Number Puzzle</h1>
+        <p class="subtitle">Arrange the numbers in order to win!</p>
+        
+        <div class="puzzle-grid">
+            <button class="puzzle-btn" id="b1" onclick="move1()">1</button>
+            <button class="puzzle-btn" id="b2" onclick="move2()">2</button>
+            <button class="puzzle-btn" id="b3" onclick="move3()">3</button>
+            <button class="puzzle-btn" id="b4" onclick="move4()">4</button>
+            <button class="puzzle-btn" id="b5" onclick="move5()">5</button>
+            <button class="puzzle-btn" id="b6" onclick="move6()">6</button>
+            <button class="puzzle-btn" id="b7" onclick="move7()">7</button>
+            <button class="puzzle-btn" id="b8" onclick="move8()">8</button>
+            <button class="puzzle-btn empty" id="b9" onclick="move9()"></button>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="shufflePuzzle()">New Game</button>
+            <button class="btn secondary" onclick="resetPuzzle()">Reset</button>
+        </div>
+
+        <div class="stats">
+            <div class="moves">Moves: <span id="moveCount">0</span></div>
+            <div class="timer">Time: <span id="timer">00:00</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
